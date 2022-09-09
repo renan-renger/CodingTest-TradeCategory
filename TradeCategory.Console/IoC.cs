@@ -1,7 +1,9 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using TradeCategory.Application.Interfaces;
-using Infra = TradeCategory.Infrastructure;
+using Services = TradeCategory.Infrastructure.Services;
+using Processors = TradeCategory.Infrastructure.Processors;
+using TradeCategory.Domain.Entities;
 
 namespace TradeCategory.Console
 {
@@ -11,9 +13,9 @@ namespace TradeCategory.Console
         {
             return Host.CreateDefaultBuilder(args)
                 .ConfigureServices((_, services) =>
-                    services.AddScoped<ITrade, Infra.Entities.Trade>()
-                    .AddScoped<ITradeService, Infra.Services.TradeService>()
-                    .AddScoped<ITradeProcessor, Infra.Processors.TradeProcessor>()
+                    services.AddScoped<ITrade, Trade>()
+                    .AddScoped<ITradeService, Services.TradeService>()
+                    .AddScoped<ITradeProcessor, Processors.TradeProcessor>()
             )
             .Build();
         }

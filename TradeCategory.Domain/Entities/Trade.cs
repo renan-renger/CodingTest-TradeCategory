@@ -1,7 +1,7 @@
 ﻿using TradeCategory.Application.Enums;
 using TradeCategory.Application.Interfaces;
 
-namespace TradeCategory.Infrastructure.Entities
+namespace TradeCategory.Domain.Entities
 {
     public class Trade : ITrade
     {
