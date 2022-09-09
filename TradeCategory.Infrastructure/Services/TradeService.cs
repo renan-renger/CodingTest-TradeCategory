@@ -15,7 +15,7 @@ namespace TradeCategory.Infrastructure.Services
                 throw new ArgumentException("\"Value\" part of trade data is invalid. Value must be numeric.");
 
             if (!DateTime.TryParseExact(_nextPaymentDate, "MM/dd/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out var _tempNextPaymentDate))
-                throw new InvalidDataException("\"Next Payment Date\" part of trade data is invalid. Date must be in format \"MM/dd/yyyy\" and must be valid.");
+                throw new ArgumentException("\"Next Payment Date\" part of trade data is invalid. Date must be in format \"MM/dd/yyyy\" and must be valid.");
 
             return new Trade(_tempValue, _clientSector, _tempNextPaymentDate, _paymentReferenceDate);
         }

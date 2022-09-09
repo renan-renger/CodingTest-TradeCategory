@@ -14,6 +14,7 @@ namespace TradeCategory.Infrastructure.Processors
 
         public void ProcessTrades()
         {
+            TermConsole.WriteLine("Application is live. Please input the trade' data."); //Using WriteLine() to notify the user that the application is working and that manual input can be done. Comment if using automated input. 
             var referenceDateString = TermConsole.ReadLine(); //Reading reference date
             if (!DateTime.TryParseExact(referenceDateString, "MM/dd/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime referenceDate)) // Parsing from fixed MM/dd/YYYY into system format (i.e: dd/MM/YYYY for local machine)
                 throw new InvalidDataException("Invalid reference date supplied. Date must be in format \"MM/dd/yyyy\" and must be valid.");

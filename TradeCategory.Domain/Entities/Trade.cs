@@ -24,7 +24,7 @@ namespace TradeCategory.Domain.Entities
                 if (Enum.TryParse<ClientSectorEnum>(ClientSector, true, out var clientSectorEnum))
                     return clientSectorEnum;
                 throw
-                    new InvalidOperationException("Client Sector informed doesn't match either \"Private\" or \"Public\"");
+                    new ArgumentException("Client Sector informed doesn't match either \"Private\" or \"Public\"");
             }
         }
     }
