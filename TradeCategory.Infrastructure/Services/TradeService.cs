@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using TradeCategory.Application.Enums;
 using TradeCategory.Application.Interfaces;
-using TradeCategory.Infrastructure.Entities;
+using TradeCategory.Domain.Entities;
 
 namespace TradeCategory.Infrastructure.Services
 {

@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeCategory.Console", ".\TradeCategory.Console\TradeCategory.Console.csproj", "{C5EA5B28-CC57-4D78-8DDF-75EACA28C608}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TradeCategory.Console", "TradeCategory.Console\TradeCategory.Console.csproj", "{C5EA5B28-CC57-4D78-8DDF-75EACA28C608}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeCategory.Application", ".\TradeCategory.Application\TradeCategory.Application.csproj", "{855127B7-84BE-4F18-872C-195F86D36318}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TradeCategory.Application", "TradeCategory.Application\TradeCategory.Application.csproj", "{855127B7-84BE-4F18-872C-195F86D36318}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeCategory.Infrastructure", ".\TradeCategory.Infrastructure\TradeCategory.Infrastructure.csproj", "{9471D827-100E-469E-9FBF-007D03194904}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TradeCategory.Infrastructure", "TradeCategory.Infrastructure\TradeCategory.Infrastructure.csproj", "{9471D827-100E-469E-9FBF-007D03194904}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeCategory.Tests", ".\TradeCategory.Tests\TradeCategory.Tests.csproj", "{377CECBC-3E9F-4859-8A46-7C39CBEB38FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TradeCategory.Tests", "TradeCategory.Tests\TradeCategory.Tests.csproj", "{377CECBC-3E9F-4859-8A46-7C39CBEB38FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeCategory.Domain", "TradeCategory.Domain\TradeCategory.Domain.csproj", "{6BA7272E-A08F-49AA-9671-E0F991D00A1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{377CECBC-3E9F-4859-8A46-7C39CBEB38FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{377CECBC-3E9F-4859-8A46-7C39CBEB38FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{377CECBC-3E9F-4859-8A46-7C39CBEB38FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BA7272E-A08F-49AA-9671-E0F991D00A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BA7272E-A08F-49AA-9671-E0F991D00A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BA7272E-A08F-49AA-9671-E0F991D00A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BA7272E-A08F-49AA-9671-E0F991D00A1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
