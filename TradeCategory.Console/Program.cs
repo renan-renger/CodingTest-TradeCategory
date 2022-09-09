@@ -3,15 +3,9 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using TradeCategory.Application.Interfaces;
-using Infra = TradeCategory.Infrastructure;
+using TradeCategory.Console;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices((_, services) =>
-        services.AddScoped<ITrade, Infra.Entities.Trade>()
-        .AddScoped<ITradeService, Infra.Services.TradeService>()
-        .AddScoped<ITradeProcessor, Infra.Processors.TradeProcessor>()
-    )
-    .Build();
+using IHost host = new IoC().BuildHost(args);
 
 Run(host.Services);
 
